@@ -25,7 +25,7 @@
 }
 
 a{
-    text-decoration: none !important;
+    text-decoration: none;
     color: white;
     font-family: var(--normal);
 }
@@ -107,6 +107,7 @@ section{
     color: var(--dark-color);
     position: relative;
     transition: var(--general-transision);
+    text-decoration: none;
 }
 
 #header #navbar #navlist .navlist-item .link::after{
