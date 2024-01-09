@@ -206,6 +206,10 @@ section{
         text-align: center;
         color: var(--accen-color);
     }
+
+    .card .card-body .card-text{
+        text-align: center;
+    }
     
     .tech-logo{
         align-self: center;
