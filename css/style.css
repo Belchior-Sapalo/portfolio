@@ -109,6 +109,21 @@ section{
     transition: var(--general-transision);
 }
 
+#header #navbar #navlist .navlist-item .link::after{
+    position: absolute;
+    content: '';
+    background-color: var(--accen-color);
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: var(--general-transision);
+}
+
+#header #navbar #navlist .navlist-item .link:hover::after{
+   width: 100%;
+}
+
 #header #navbar #navlist .navlist-item .link.link-active{
     color: var(--accen-color);
 }
