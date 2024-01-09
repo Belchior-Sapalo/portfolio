@@ -335,6 +335,7 @@ section{
         transition: var(--general-transision);
         gap: 1px;
         z-index: 9999;
+        padding: 0;
     }
 
     #header #navbar #menu-show{
@@ -362,6 +363,7 @@ section{
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         padding: 20px;
     }
 
