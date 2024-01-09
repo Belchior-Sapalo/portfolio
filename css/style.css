@@ -194,7 +194,26 @@ section{
     /* fim home section */
 
     /* about section */
+
+    /* skill styles */
+    .card{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .card .card-body .card-title{
+        font-family: var(--bold), sans-serif;
+        text-align: center;
+        color: var(--accen-color);
+    }
     
+    .tech-logo{
+        align-self: center;
+        font-size: 40px;
+        color: var(--accen-color);
+    }
+
+    /* fim skill style */
 
     /* fim about section */
 
