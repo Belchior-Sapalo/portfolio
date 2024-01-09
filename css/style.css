@@ -147,6 +147,12 @@ section{
     width: 100%;
 }
 
+#home #home-p{
+    font-family: var(--bold), sans-serif;
+    text-transform: uppercase;
+    color: var(--natural-color);
+}
+
 #text{
     position: relative;
     font-family: var(--bold), sans-serif;
