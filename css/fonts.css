@@ -1,0 +1,17 @@
+/* --------------------
+    importando fontes 
+----------------------*/
+@font-face {
+    font-family: 'normal';
+    src: url(../assets/fonts/Poppins-Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../assets/fonts/Poppins-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'thin';
+    src: url(../assets/fonts/Poppins-Thin.ttf) format(truetype);
+}

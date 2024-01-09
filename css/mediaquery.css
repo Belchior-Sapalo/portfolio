@@ -1,0 +1,53 @@
+/*------------------------
+     Media queries 
+-------------------------*/
+
+@media (max-width: 500px) {
+    #header #navbar #menu-show{
+        display: block;
+        color: var(--natural-color);
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #header #navbar{
+       position: relative;
+       padding:  10px;
+    }
+
+    #header #navbar #navlist{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--natural-color);
+        height: 100vh;
+        left: 100%;
+        width: 100%;
+        transition: var(--general-transision);
+        gap: 1px;
+    }
+
+    #header #navbar #navlist #menu-hidden{
+        display: block;
+        position: absolute;
+        right: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        color: var(--accen-color);
+        background-color: var(--dark-color);
+        padding: 10px;
+        border-radius: 2px;
+        margin: 5px;
+    }
+
+    #header #navbar #navlist .navlist-item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header #navbar #navlist .navlist-item .link{
+        color: var(--dark-color);
+        padding: 20px;
+    }
+}

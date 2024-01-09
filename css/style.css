@@ -1,0 +1,381 @@
+/* ------------------------
+    importando variáveis
+--------------------------- */
+@import url(variables.css);
+
+/* ------------------------
+    importando fontes
+--------------------------- */
+@import url(fonts.css);
+
+/* ---------------------------
+    importando mediaqueries
+------------------------------ */
+/* @import url(mediaquery.css); */
+
+/* ------------------------
+    Configurações gerais
+--------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--normal), sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+    color: white;
+    font-family: var(--normal);
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    min-height: 100vh !important;
+}
+
+/* ------------------------
+    estilos do header
+--------------------------*/
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.045);
+    z-index: 999;
+}
+
+#header #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+    padding: 10px 100px;
+    transition: var(--general-transision);
+    border-bottom: 1px solid rgba(10, 10, 10, 0.074);
+}
+
+
+#header #navbar #logo #logo-img{
+    color: var(--secondary-color);
+    font-family: var(--bold);
+    position: relative;
+    transition: var(--general-transision);
+}
+
+#header #navbar #logo #logo-img::after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-top: 2px solid var(--accen-color);
+    border-right: 2px solid var(--accen-color);
+    top: 3px;
+}
+
+#header #navbar #logo #logo-img::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-bottom: 2px solid var(--accen-color);
+    border-left: 2px solid var(--accen-color);
+    bottom: 0;
+    left: -5px;
+}
+
+#header #navbar #navlist{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+    z-index: 999;
+}
+
+#header #navbar #navlist .navlist-item:not(:last-child){
+    margin-right: 20px;
+}
+
+#header #navbar #navlist .navlist-item .link{
+    color: var(--dark-color);
+    position: relative;
+    transition: var(--general-transision);
+}
+
+#header #navbar #navlist .navlist-item .link.link-active{
+    color: var(--accen-color);
+}
+
+#header #navbar #navlist #menu-hidden, #menu-show{
+    display: none;
+}
+
+/* ------------------------
+    fim estilos do header
+--------------------------*/
+
+/* ------------------------
+    estilos das sections
+--------------------------*/
+
+.sec{
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.sec .title{
+    text-align: center;
+    position: relative;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--accen-color);
+    z-index: -1;
+    font-family: var(--bold), sans-serif;
+    margin-bottom: 50px;
+}
+
+    /* home section */
+
+#home{
+    width: 100%;
+}
+
+#text{
+    position: relative;
+    font-family: var(--bold), sans-serif;
+    z-index: -1;
+}
+
+#home #text::after{
+    content: '';
+    position: absolute;
+    background-color: var(--dark-color);
+    width: 1px;
+    height: 50px;
+    animation: cursor .5s infinite ease;
+    margin-left: 3px;
+}
+
+
+@keyframes cursor {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#home #home-link{
+    color: var(--dark-color);
+    border: 1px solid var(--accen-color);
+    padding: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: var(--general-transision);
+}
+
+#home #home-link:hover{
+    color: var(--natural-color);
+    background-color: var(--accen-color);
+}
+
+
+    /* fim home section */
+
+    /* about section */
+    
+
+    /* fim about section */
+
+    /* services section */
+    #feedarea #carousel{
+        z-index: 99;
+    }
+    
+    #feedarea .client{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 10px 10px 10px;
+        background-color: var(--natural-color);
+        border-radius: 20px;
+    }
+
+    #feedarea .client .client-name{
+        font-family: var(--bold), sans-serif;
+    }
+
+    #feedarea .client-img-container{ 
+        display: flex;
+        justify-content: center;
+        height: 40px;
+    }
+
+    #feedarea .img-client{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: translateY(-50px);
+    }
+
+    #feedarea .client-about-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    /* fim services section */
+
+    /* contact section */
+    #contact-content{
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form-contact{
+        border-radius: 8px;
+        background-color: var(--natural-color);
+        padding: 15px 10px;
+    }
+
+    #form-contact .form-control:focus{
+        box-shadow: none;
+        border-color: var(--natural-color);
+    }
+
+    #form-contact textarea{
+        resize: none;
+    }
+
+    #form-contact #submit-btn{
+       width: 100%;
+       background-color: var(--secondary-color);
+       font-family: var(--bold), sans-serif;
+    }
+
+    #form-contact #submit-btn:hover{
+       color: var(--natural-color);
+    }
+
+    #social-midia{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #social-midia .social-midia-link{
+        border-radius: 50%;
+        transition: var(--general-transision);
+        padding: 10px;
+    }
+
+    #social-midia .social-midia-link:hover .fab{
+        color: var(--accen-color);
+        transform: scale(1.5);
+    }
+
+    #social-midia .social-midia-link .fab{
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        transition: var(--general-transision);
+    }
+
+
+    /* fim contact section */
+
+/* ------------------------
+    fim estilos das sections
+--------------------------*/
+
+/*------------------------
+     Media queries 
+-------------------------*/
+
+@media (max-width: 870px) {
+    /* header */
+    #header #navbar #menu-show{
+        display: block;
+        color: var(--natural-color);
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #header #navbar{
+       position: relative;
+       padding:  10px 30px;
+    }
+
+    #header #navbar #navlist{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--other-color);
+        height: 100vh;
+        left: 100%;
+        width: 100%;
+        transition: var(--general-transision);
+        gap: 1px;
+        z-index: 9999;
+    }
+
+    #header #navbar #menu-show{
+        color: var(--accen-color);
+    }
+
+    #header #navbar #navlist #menu-hidden{
+        display: block;
+        position: absolute;
+        right: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        color: var(--accen-color);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+        transition: var(--general-transision)
+    }
+
+    #header #navbar #navlist #menu-hidden:hover{
+        background-color: var(--dark-color);
+    }
+
+    #header #navbar #navlist .navlist-item{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #header #navbar #navlist .navlist-item:not(:last-child){
+        margin-right: 0;
+    }
+
+    #header #navbar #navlist .navlist-item .link{
+        color: var(--natural-color);
+    }
+
+    /* sections */
+    #text::after{
+        height: 35px !important;
+    }
+    
+}

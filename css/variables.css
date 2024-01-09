@@ -1,0 +1,16 @@
+/* --------------------
+  declarando variáveis 
+----------------------*/
+:root{
+    --primary-color:#139FCB;
+    --secondary-color:#00A896;
+    --accen-color:#FF6B35;
+    --second-color:#004080;
+    --natural-color: #EAEAEA;
+    --dark-color:#0d0d06;
+    --other-color: rgb(41, 41, 41);
+    --general-transision: all .3s ease;
+    --normal: 'normal';
+    --bold: 'bold';
+    --thin: 'thin'
+}
