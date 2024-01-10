@@ -199,6 +199,7 @@ section{
     border-radius: 8px;
     text-transform: uppercase;
     transition: var(--general-transision);
+    text-decoration: none;
 }
 
 #home #home-link:hover{
