@@ -48,7 +48,7 @@
     </header>
   
     <main id="main">
-        <section id="home" class="sec container">
+        <section id="home" class="sec ">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-12 col-md-12">
                     <h1 id="text"></h1>
@@ -58,8 +58,8 @@
                     </p>
                     <a href="#about" id="home-link">saber mais <i class="fa fa-arrow-down"></i></a>
                 </div>
-                <div class="col-lg-6 col-sm-12 col-md-12 mt-5">
-                   <img src="assets/images/home-img1.png" alt="image" class="img-fluid">
+                <div class="col-lg-6 col-sm-12 col-md-12 mt-5" id="img-home-container">
+                   <img src="assets/images/home-img1.png" alt="image" class="img-fluid" id="img-home">
                 </div>
             </div>
         </section>
@@ -70,107 +70,111 @@
 
             <div class="row">
                 <div class="col-lg-6 col-sm-12 col-md-12">
-                   <img src="assets/images/home-img1.png" alt="image" class="img-fluid">
+                   <img src="assets/images/home-img1.png" alt="image" class="img-fluid" id="img-about">
                 </div>
                 <div class="col-lg-6 col-sm-12 col-md-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi recusandae, ipsam aliquid sit numquam nobis odit provident iure ipsa repellat at harum autem itaque. Vero repudiandae at necessitatibus provident!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem, enim veritatis dolorum sed aliquid dolor laboriosam sit nostrum pariatur possimus magnam quod, ad alias incidunt consequuntur. Omnis, error quia?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste odio a praesentium pariatur soluta fugiat cumque voluptas ut. Iure, quod deleniti. Enim porro ipsam perferendis debitis, expedita ullam incidunt odio!logo
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus autem possimus consequuntur. Molestiae, porro. Aliquid asperiores dolore accusamus similique, vitae quis incidunt nesciunt sint, ad accusantium fugiat repudiandae <consequuntur class="lo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eveniet facere. Nulla, ducimus eveniet numquam veniam magni repellendus soluta. Quasi reprehenderit quas reiciendis voluptates consequuntur quis dolor odio ut vero.</consequuntur>
+                    <p  id="about-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi recusandae, ipsam aliquid sit numquam nobis odit provident iure ipsa repellat at harum autem itaque. Vero repudiandae at necessitatibus provident!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem, enim veritatis dolorum sed aliquid dolor laboriosam sit nostrum pariatur possimus magnam quod, ad alias incidunt consequuntur. Omnis, error quia?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste odio a praesentium pariatur soluta fugiat cumque voluptas ut. Iure, quod deleniti. Enim porro ipsam perferendis debitis, expedita ullam incidunt odio!logo
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus autem possimus consequuntur. Molestiae, porro. Aliquid asperiores dolore accusamus similique, vitae quis incidunt nesciunt sint, ad accusantium fugiat repudiandaeLorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eveniet facere. Nulla, ducimus eveniet numquam veniam magni repellendus soluta. Quasi reprehenderit quas reiciendis voluptates consequuntur quis dolor odio ut vero.
+                    </p>
+                    <a href="#" id="downcv">Download CV</a>
                 </div>
             </div>
-            <div class="row">
-                <h5 class="title col-12 mt-5">Habilidades</h5>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-html5 tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">HTML5</h5>
-                            <h5 class="card-title">80%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div id="skils">
+                <div class="row">
+                    <h5 class="title col-12 mt-5" id="title-skil">Habilidades</h5>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-html5 tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">HTML5</h5>
+                                <h5 class="card-title">80%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-css3 tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">CSS3</h5>
-                            <h5 class="card-title">70%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-css3 tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">CSS3</h5>
+                                <h5 class="card-title">70%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-js tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">JavaScript</h5>
-                            <h5 class="card-title">45%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-js tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                                <h5 class="card-title">45%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-bootstrap tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Bootstrap5</h5>
-                            <h5 class="card-title">40%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-bootstrap tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap5</h5>
+                                <h5 class="card-title">40%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-node tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Node.Js</h5>
-                            <h5 class="card-title">30%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-node tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Node.Js</h5>
+                                <h5 class="card-title">30%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-java tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Java</h5>
-                            <h5 class="card-title">15%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-java tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Java</h5>
+                                <h5 class="card-title">15%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fa fa-database tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Bases de dados (SQL e NoSQL)</h5>
-                            <h5 class="card-title">40%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fa fa-database tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Bases de dados (SQL e NoSQL)</h5>
+                                <h5 class="card-title">40%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fab fa-github tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Git e Github</h5>
-                            <h5 class="card-title">55%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fab fa-github tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Git e Github</h5>
+                                <h5 class="card-title">55%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <i class="fa fa-pen-nib tech-logo"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Photoshop e Ilustrator</h5>
-                            <h5 class="card-title">37%</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <i class="fa fa-pen-nib tech-logo"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Photoshop e Ilustrator</h5>
+                                <h5 class="card-title">37%</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,17 +285,56 @@
 
                         <button type="submit" class="btn" id="submit-btn">Enviar</button>
 
-                        <div id="social-midia" class="mt-3">
+                        <!-- <div id="social-midia" class="mt-3">
                             <a href="#" class="social-midia-link"><i class="fab fa-linkedin"></i></a>
                             <a href="#" class="social-midia-link"><i class="fab fa-github"></i></a>
                             <a href="#" class="social-midia-link"><i class="fab fa-facebook"></i></a>
                             <a href="#" class="social-midia-link"><i class="fab fa-youtube"></i></a>
                             <a href="#" class="social-midia-link"><i class="fab fa-twitter"></i></a>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>
         </section>
+
+        <div class="bg-dark">
+            <footer class="row" id="footer">
+                <div class="col-12" id="copy">
+                    <p>&copy;2024 Belchior Cassumba Sapalo - todos os direitos reservados</p>
+                </div>
+                 <div class="col-sm-12 col-md-12 col-lg-6 footer-area">
+                    <h5 class="footer-title">Navegar</h5>
+
+                    <ul id="footerlist">
+                        <li class="footerlist-item">
+                            <a href="#home" class="link">Início</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a href="#about" class="link">Sobre mim</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a href="#services" class="link">Serviços</a>
+                        </li>
+                        <li class="footerlist-item">
+                            <a href="#contact" class="link">Contactos</a>
+                        </li>
+                    </ul>
+                    
+                 </div>
+                 <div class="col-sm-12 col-md-12 col-lg-6 footer-area">
+                    <h5 class="footer-title">Contactar</h5>
+
+                    <div id="social-midia">
+                        <a href="#" class="social-midia-link-footer"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-midia-link-footer"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-midia-link-footer"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-midia-link-footer"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-midia-link-footer"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-midia-link-footer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </footer>
+        </div>
     </main>
 
     <!-- JQUERY FILE -->

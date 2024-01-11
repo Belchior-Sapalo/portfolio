@@ -10,6 +10,7 @@
     --dark-color:#0d0d06;
     --other-color: rgb(41, 41, 41);
     --general-transision: all .3s ease;
+    --animation-transition: all 1s ease;
     --normal: 'normal';
     --bold: 'bold';
     --thin: 'thin'

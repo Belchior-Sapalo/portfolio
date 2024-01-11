@@ -36,8 +36,9 @@ $(document).ready(()=>{
         const top = window.scrollY
 
         if(top + 60 > homeHeight){
-
+            
         }else{
+            
         }
 
         $('.sec').each((index, sec)=>{
@@ -55,6 +56,21 @@ $(document).ready(()=>{
         })
 
    })
+         /* animação ao scroll */
+            const sections = document.querySelectorAll('.sec');
+            const obeservador = new IntersectionObserver((entries)=>{
+                entries.forEach((entry)=>{
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('visible')
+                    }else{
+                        entry.target.classList.remove('visible')
+                    }
+                })
+            })
+
+            sections.forEach((sec)=>{
+                obeservador.observe(sec)
+            })
 
    /* efeito de texto sendo escrito home */
    const text = document.getElementById('text');
@@ -105,6 +121,7 @@ $(document).ready(()=>{
   escrever()
 
 
+  /* carrossel */
   $('.owl-carousel').owlCarousel({
     loop: true,
     autoplay: true,
@@ -121,4 +138,6 @@ $(document).ready(()=>{
         }
     }
 })
+
+
 })

@@ -24,6 +24,10 @@
     font-family: var(--normal), sans-serif;
 }
 
+main{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -144,6 +148,11 @@ section{
 .sec{
     margin: auto;
     padding: 80px 20px;
+    overflow-x: hidden;
+}
+
+.sec:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .sec .title{
@@ -152,7 +161,6 @@ section{
     text-decoration-line: underline;
     text-underline-offset: 10px;
     text-decoration-color: var(--accen-color);
-    z-index: -1;
     font-family: var(--bold), sans-serif;
     margin-bottom: 50px;
 }
@@ -166,7 +174,6 @@ section{
 #text{
     position: relative;
     font-family: var(--bold), sans-serif;
-    z-index: -1;
 }
 
 #home #text::after{
@@ -207,16 +214,46 @@ section{
     background-color: var(--accen-color);
 }
 
-
     /* fim home section */
-
+   
     /* about section */
+    #about #downcv{
+        color: var(--dark-color);
+        border: 1px solid var(--accen-color);
+        padding: 10px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        transition: var(--general-transision);
+        text-decoration: none;
+        margin-top: 20px;
+    }
 
+    #about #downcv:hover{
+        color: var(--natural-color);
+        background-color: var(--accen-color);
+    }
+
+    #about #about-text{
+    }
+
+    #about #skils{
+    }
+
+    #about #skils #title-skil{
+    }
     /* skill styles */
     .card{
         padding: 10px;
         margin: 10px;
+        cursor: pointer;
+        transition: var(--general-transision);
     }
+
+    .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.117);
+    }
+
 
     .card .card-body .card-title{
         font-family: var(--bold), sans-serif;
@@ -342,9 +379,101 @@ section{
 
     /* fim contact section */
 
+    /* animation */
+
+    #img-home{
+        transform: translateX(1000px);
+        transition: var(--animation-transition);
+    }
+
+    .visible #img-home{
+        transform: translateX(0px);
+    }
+
+    #img-about{
+        transform: translateX(-1000px);
+        transition: var(--animation-transition);
+    }
+
+    .visible #img-about{
+        transform: translateX(0px);
+    }
+
+    .sec .title{
+        opacity: 0;
+        transform: translateY(-40px);
+        transition: 2s;
+    }
+
+    .visible .title{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+     #about-text{
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .visible #about-text{
+        opacity: 1;
+    }
+
+    /* fim animation */
+
 /* ------------------------
     fim estilos das sections
 --------------------------*/
+
+#footer{
+    color: var(--natural-color);
+    padding: 20px;
+}
+
+#footer .footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+#footer #copy p{
+    text-align: center;
+    font-family: var(--thin);
+}
+
+#footer .footer-title{
+    font-family: var(--bold);
+    border-top: 3px solid var(--other-color);
+    border-bottom: 3px solid var(--other-color);
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#footer #footerlist{
+    padding: 0;
+}
+
+#footer #footerlist .footerlist-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#footer #footerlist .footerlist-item > .link{
+    text-decoration: none;
+    color: var(--natural-color);
+    text-transform: uppercase;
+    font-family: var(--bold);
+    font-size: 12px;
+}
+
+#footer .footer-area #social-midia .social-midia-link-footer{
+    color: var(--dark-color);
+    font-size: 25px;
+}
 
 /*------------------------
      Media queries 
