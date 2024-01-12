@@ -172,10 +172,6 @@ section{
     background-attachment: fixed; */
 }
 
-#home-text{
-    padding-top: 60px;
-}
-
 #text{
     position: relative;
     font-family: var(--bold), sans-serif;
@@ -303,7 +299,7 @@ section{
 
     /* services section */
 #services-area .service{
-    margin: 16px;
+    margin: 15px;
     position: relative;
 }
 
