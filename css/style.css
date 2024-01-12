@@ -215,10 +215,14 @@ section{
 }
 
 #home #img-home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 #home #img-home-container #img-home{
+    width: 600px;
 }
 
     /* fim home section */
@@ -227,6 +231,14 @@ section{
 #about{
     padding-left: 0px;
     padding-right: 0px;
+}
+
+#about #img-about-container{
+  padding-bottom: 10px;
+}
+
+#about #img-about-container #about-img{
+    height: 300px;
 }
 
 #about #about-text{
