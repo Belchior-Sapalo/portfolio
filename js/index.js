@@ -34,13 +34,7 @@ $(document).ready(()=>{
    $(document).scroll(()=>{
         const homeHeight = document.getElementById('home').offsetHeight;
         const top = window.scrollY
-
-        if(top + 60 > homeHeight){
-            
-        }else{
-            
-        }
-
+        
         $('.sec').each((index, sec)=>{
             const posY = sec.offsetTop - 60;
             const secHeight = sec.offsetHeight

@@ -235,6 +235,9 @@ section{
 
 #about #img-about-container{
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about #img-about-container #about-img{
